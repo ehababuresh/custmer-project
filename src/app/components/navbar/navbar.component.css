@@ -1,0 +1,32 @@
+#navbar {
+    padding: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+}
+
+
+.form-control {
+    width: 200px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.nav-item {
+    font-size: 25px;
+}
+
+
+.button {
+    margin: 8px;
+    width: 128px;
+}
+
+    .nav{
+        width: 180px;
+        border-radius:5px;
+        box-sizing: content-box;
+        box-shadow: #0ca2ff;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }

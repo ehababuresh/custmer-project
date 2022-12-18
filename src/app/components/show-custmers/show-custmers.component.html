@@ -1,0 +1,67 @@
+
+<div _ngcontent-sut-c36="" class="header container-fluid">
+    <div _ngcontent-sut-c36="" class="mx-4 mt-1">
+    <h2 _ngcontent-sut-c36="" class="title">
+        <i _ngcontent-sut-c36="" class="fa-solid fa-user"></i> Customers 
+        <span _ngcontent-sut-c36="" style="color: rgb(192, 192, 192);"></span>
+    </h2><small _ngcontent-sut-c36="">Company's Customers </small>
+</div>
+</div>
+
+
+
+<ng-container  class="container-fluid"> 
+  <form class="d-flex" role="search" >
+ <input class="form-control me-2" type="text" placeholder="search firstname" [(ngModel)]="firstname"> 
+ <input class="form-control me-2" type="text" placeholder="search lastname"[(ngModel)]="lastname">
+ <input class="form-control me-2" type="text" placeholder="search Phone"[(ngModel)]="Phone">
+</form>
+<ng-container
+ *ngIf= "Custmers | filter :'firstname':firstname | filter : 'lastname': lastname | filter: 'Phone': Phone   as Custmers">  
+
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th>NO</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone</th>
+            <th>email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let custmer of Custmers ; index as i ">
+            <td>{{i+1}}</td>
+            <td>{{custmer.firstname}}</td>
+            <td>{{custmer.lastname}}</td>
+            <td>{{custmer.Phone}}</td>
+            <td>{{custmer.Email}}</td>
+            <td><a (click)="updatecustmer(custmer)"><i class="fa-solid fa-pen color-primary" style="color: rgb(29, 35, 39);"></i></a></td>
+            <td><a (click)="deletecustmer(custmer)"><i  class=" fa-solid fa-trash-can btn-primary" style="color: rgb(141, 40, 40);"></i></a></td>
+            <td><a (click)="detailscustmer(custmer)"><i class=" fa-solid fa-eye " style="color:rgb(91, 125, 206)"></i></a></td>
+         
+        </tr>
+    </tbody>
+</table>
+</ng-container>
+
+<!-- AREA TO DISPLAY ALL THE EMPLOYEES -->
+<div class="employees">
+
+    <div class="row mt-5" *ngIf="Custmers.length == 0">
+      <div class="col text-center">
+        <span class="text-secondary fs-2 fw-bold fst-italic">There are No custmers Added!</span>
+      </div>
+    </div>
+
+
+
+
+
+
+  
+   
+    

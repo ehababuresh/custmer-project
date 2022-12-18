@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "w0311-ehabproject": {
+      "hosting": {
+        "custmer": [
+          "w0311-ehabproject"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "w0311-ehabproject"
+  }
+}

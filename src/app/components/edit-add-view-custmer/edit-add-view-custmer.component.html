@@ -1,0 +1,79 @@
+
+
+
+
+
+<form #updatecustmer="ngForm" (ngSubmit)="handlesave()">
+    <h3>{{viewMode ? 'view' : id ? 'update' : 'add new' }} custmer</h3>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter First name"
+            name="firstname"
+            [(ngModel)]="custmer.firstname"
+            #firstname="ngModel"
+            required
+            [disabled]="viewMode"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last name</label>
+            <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter Last name"
+                name="lastname"
+                [(ngModel)]="custmer.lastname"
+                #lastname="ngModel"
+                required
+                [disabled]="viewMode"
+                />
+            </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+        <input
+        type="number"
+        class="form-control"
+        id=" exampleFormControlInput1"
+        placeholder="Enter Phone"
+        name="Phone"
+        [(ngModel)]="custmer.Phone"
+        #phone="ngModel"
+        required
+        [disabled]="viewMode"
+        />
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+         <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter Email"
+            name="Email"
+            [(ngModel)]="custmer.Email"
+            #email="ngModel"
+            required
+            [disabled]="viewMode"
+            />
+        </div>
+
+        <textarea
+         _ngcontent-wjt-c32=""
+          [(ngModel)]="custmer.note"
+           name="note" 
+           id="note"
+            placeholder="Customer Note.."
+             [disabled]="viewMode"
+              minlength="4" cols="30" rows="3" 
+              class="form-control w-50 mt-3 ng-untouched ng-pristine ng-valid">
+            </textarea>
+
+        
+        <button *ngIf="!viewMode" class="btn btn-success" style="background-color: black ">{{viewMode ? 'view' :id ? 'update': 'add new'}}custmer </button></form>
+  
+        

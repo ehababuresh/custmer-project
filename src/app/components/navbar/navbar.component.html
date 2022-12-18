@@ -1,0 +1,15 @@
+<div id="navbar" class="bg-dark text-light">
+    <h3><a><i class="text-center"></i></a><i class="fa-solid fa-layer-group"></i>CRM System</h3>
+    
+  
+    <div ngbDropdown id="dropdown">
+      <button class="btn btn-primary" id="gfg" ngbDropdownToggle>{{email}}</button>
+      <div ngbDropdownMenu="gfg">
+        <button ngbDropdownItem> <i class="fa-solid fa-user"></i>Profile</button>
+        <button   ngbDropdownItem (click)="logout()"> <i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+      </div>
+    </div>
+   
+  </div>
+
+

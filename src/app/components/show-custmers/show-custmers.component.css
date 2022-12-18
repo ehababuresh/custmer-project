@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(to left,#555d87 0%,#005e98 12%,#0ca2ff 47%,#575e86 100%) left bottom rgb(239,239,239) no-repeat;
+    background-size: 100% 5px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,.212));
+   
+
+}
+
+
+.te{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table{
+
+
+    border-radius: 1%;
+    background-color: #b6c1c7;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+    
+}

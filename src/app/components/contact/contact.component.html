@@ -1,0 +1,97 @@
+
+
+  <div _ngcontent-wmh-c28="" class="header"><div _ngcontent-wmh-c28="" class="mx-4 mt-1"><h2 _ngcontent-wmh-c28="" class="title"><i _ngcontent-wmh-c28="" class="fa-regular fa-address-card"></i> Contacts <span _ngcontent-wmh-c28="" style="color: rgb(192, 192, 192);">(9)</span></h2><small _ngcontent-wmh-c28="">Company's Contacts Information.</small></div></div>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="search Name" aria-label="Search " [(ngModel)]="fullname">
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+    
+  <ng-container *ngIf= "contacts | contactfilter :'fullname':fullname   as Contacts">
+    
+      <div *ngFor="let item of Contacts" class="tableDiv row mb-4">
+        <div _ngcontent-wmh-c28="" class="col-xl-3 col-lg-6 col-md-6 mb-3 ng-star-inserted">
+          <div _ngcontent-wmh-c28="" id="container" class="card">
+            <div _ngcontent-wmh-c28="" id="hero-img"></div>
+            <div _ngcontent-wmh-c28="" id="profile-img">
+              <img _ngcontent-wmh-c28="" alt="" src="{{item.img}}">
+            </div>
+            <div _ngcontent-wmh-c28="" id="content">
+              <h1 _ngcontent-wmh-c28="">{{item.fullname}}</h1>
+              <div _ngcontent-wmh-c28="" class="info mt-4">
+                <h6 _ngcontent-wmh-c28="">
+                  <i _ngcontent-wmh-c28="" class="fa-solid fa-envelope"></i> {{item.Email}}
+                </h6>
+                <h6 _ngcontent-wmh-c28="">
+                  <i _ngcontent-wmh-c28="" class="fa-solid fa-cake-candles"></i> {{item.birthday}}
+                </h6>
+                <h6 _ngcontent-wmh-c28="">
+                  <i _ngcontent-wmh-c28="" class="fa-solid fa-phone"></i> {{item.Phone}}
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </ng-container>
+
+
+  
+  
+
+
+<!-- AREA TO DISPLAY ALL THE EMPLOYEES -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+
+
+
+  
+   
+    

@@ -1,0 +1,24 @@
+
+body{
+    background-color: rgb(32, 177, 44);
+    display: flex;
+
+    background-color: rgb(255, 145, 0);
+
+}
+
+
+
+.login{
+    background-color: rgb(18, 18, 9);
+
+}
+
+.log{
+    font-size: 60px;
+}
+
+.display{
+
+    font-size: 200px;
+}
