@@ -11,8 +11,8 @@
   </nav>
     
   <ng-container *ngIf= "contacts | contactfilter :'fullname':fullname   as Contacts">
-    
-      <div *ngFor="let item of Contacts" class="tableDiv row mb-4">
+    <div class="row">
+      <div *ngFor="let item of Contacts" class="col-md-6 col-sm-6">
         <div _ngcontent-wmh-c28="" class="col-xl-3 col-lg-6 col-md-6 mb-3 ng-star-inserted">
           <div _ngcontent-wmh-c28="" id="container" class="card">
             <div _ngcontent-wmh-c28="" id="hero-img"></div>
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-
+    </div>
   </ng-container>
 
 
