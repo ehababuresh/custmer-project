@@ -18,7 +18,8 @@ export class ContactComponent implements OnInit {
       Phone: " +1 (824) 598-2328",
       Email: "elin@gmail.com",
       birthday: "Jan 18, 201424/09/2021",
-      img: "https://i.ibb.co/7kvwqq0/Pic1.jpg"
+     
+     img:  "https://i.ibb.co/vwnwPWK/img4.jpg"
       
     },
     {
@@ -26,14 +27,18 @@ export class ContactComponent implements OnInit {
       Phone: " +1 (824) 598-2328",
       Email: "francismckay@xumonk.com",
       birthday: "Jan 15, 2014",
-      img: "https://i.ibb.co/jJp7bqL/francis.jpg"
+      img:  "https://i.ibb.co/sF0VRNC/img1.jpg"
+     
+
     },
     {
       fullname: "Jewell Schultz",
       Phone: " +1 (824) 598-2328",
       Email: " jewellschultz@xumonk.com",
       birthday: " Jul 3, 2020",
-      img: "https://i.ibb.co/pbQzCtp/jewe.jpg"
+      img: "https://i.ibb.co/Vxp39Ww/img3.jpg"
+
+
     },
     {
       fullname: "Goodman Hunter",
@@ -47,7 +52,7 @@ export class ContactComponent implements OnInit {
       Phone: " +1 (824) 598-2328",
       Email: " beckwebb@xumonk.com",
       birthday: " Jul 3, 2020",
-      img: "https://i.ibb.co/HB274jh/411111111.jpg"
+      img: "https://i.ibb.co/7kvwqq0/Pic1.jpg"
     },
     {
       fullname: "Tabitha Combs",
@@ -86,7 +91,7 @@ export class ContactComponent implements OnInit {
   fullname: string = "";
    
 
-  constructor(private modal: NgbModal) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
