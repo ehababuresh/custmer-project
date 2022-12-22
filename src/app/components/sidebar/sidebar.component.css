@@ -10,13 +10,22 @@ li {
   opacity: 0.95;
   box-shadow: 0.5;
 
-
-
 }
 
 nav
 {
   font-size: 30px;
+  
+}
+
+.nav-item{
+border-radius: 5 px;
+border-color: antiquewhite;
+
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border-bottom: thick double white;
 }
 
 
