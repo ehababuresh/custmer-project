@@ -3,9 +3,24 @@ form {
     box-sizing: border-box;
 
     font-style: normal;
-    color: brown;
+    color: rgb(34, 15, 15);
     font-family: Georgia, 'Times New Roman', Times, serif;
+   
 
+    background-color: rgb(245, 243, 240);
+
+   
+
+}
+
+h3{
+    font-size: 28px;
+
+    border-color: rgb(37, 122, 150);
+}
+
+input{
+    width: 450px;
 }
 
 
