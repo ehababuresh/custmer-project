@@ -29,3 +29,8 @@
     flex-direction: column;
     flex: 0%;
 }
+.img {
+
+    width: 225;
+    height: 225;
+}
